@@ -1767,14 +1767,14 @@
 
       // ── Header Background Slideshow ────────────────
       const bgSlides = document.querySelectorAll("#headerBg img");
-      let bgCurrent = 0;
+      let bgCurrent = 3;
       if (bgSlides.length > 0) {
-        bgSlides[0].classList.add("active");
+        bgSlides[3].classList.add("active");
         setInterval(() => {
           bgSlides[bgCurrent].classList.remove("active");
           bgCurrent = (bgCurrent + 1) % bgSlides.length;
           bgSlides[bgCurrent].classList.add("active");
-        }, 6000);
+        }, 5000);
       }
 
       // Filter for Sidebar
